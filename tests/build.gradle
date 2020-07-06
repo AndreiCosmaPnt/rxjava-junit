@@ -34,7 +34,11 @@ android {
 dependencies {
     testImplementation project(":rxjava2-junit4")
     testImplementation project(":rxjava2-junit5")
+    testImplementation project(":rxjava3-junit4")
+    testImplementation project(":rxjava3-junit5")
     testImplementation "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
+    testImplementation "io.reactivex.rxjava3:rxandroid:$versions.rxandroid3"
+
     testImplementation "org.jetbrains.kotlin:kotlin-stdlib"
 
     testCompileOnly "junit:junit:$versions.junit.four"

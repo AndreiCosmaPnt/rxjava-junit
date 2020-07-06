@@ -1,0 +1,11 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm"
+}
+apply from: "$rootDir/gradle/publish.gradle"
+
+dependencies {
+    implementation project(":rxjava3-junit-common")
+    implementation "io.reactivex.rxjava3:rxjava:$versions.rxjava3"
+    implementation "org.junit.jupiter:junit-jupiter-api:$versions.junit.jupiter"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}

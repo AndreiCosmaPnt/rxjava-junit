@@ -1,0 +1,9 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm"
+}
+apply from: "$rootDir/gradle/publish.gradle"
+
+dependencies {
+    implementation "io.reactivex.rxjava3:rxjava:$versions.rxjava3"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
